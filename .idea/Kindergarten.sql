@@ -21,6 +21,7 @@ CREATE TABLE users(
     full_name VARCHAR(250),
     password_hash text
 )
+INSERT INTO guradians()
 /*
  children 1:m guardians
 groups 1:m children
