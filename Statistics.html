@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Statistics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="statistics" style="display:flex; margin:0; background-color:#F8F4EB; font-family:Inter, Arial, sans-serif;">
+<aside style="width:220px; min-height:100vh; flex-shrink:0; background-color:#E4EDDA; display:flex; flex-direction:column; box-sizing:border-box; padding-bottom:28px;">
+
+  <p style="margin:26px 0 0 24px; font-size:23px; line-height:28px; font-weight:bold; color:#284D36;">Sprout House</p>
+  <p style="margin:8px 0 36px 24px; font-size:11px; line-height:13px; font-weight:bold; color:#54645A;">NURSERY STAFF PORTAL</p>
+
+  <button type="button" onclick="location.href='Registry.html'" style="width:190px; height:42px; margin:0 0 9px 15px; padding:0 0 0 12px; text-align:left; border:none; border-radius:6px; font-family:Inter, Arial, sans-serif; font-size:16px; font-weight:bold; cursor:pointer; background-color:transparent; color:#284D36;">Children</button>
+
+  <button type="button" onclick="location.href='Statistics.html'" style="width:190px; height:42px; margin:0 0 9px 15px; padding:0 0 0 12px; text-align:left; border:none; border-radius:6px; font-family:Inter, Arial, sans-serif; font-size:16px; font-weight:bold; cursor:pointer; background-color:#284D36; color:white;">Statistics</button>
+
+  <button type="button" data-admin-only onclick="location.href='Accounts&Roles.html'" style="width:190px; height:42px; margin:0 0 9px 15px; padding:0 0 0 12px; text-align:left; border:none; border-radius:6px; font-family:Inter, Arial, sans-serif; font-size:16px; font-weight:bold; cursor:pointer; background-color:transparent; color:#284D36;">Accounts &amp; Roles</button>
+
+  <button type="button" onclick="location.href='AbouttheAuthor.html'" style="width:190px; height:42px; margin:0 0 9px 15px; padding:0 0 0 12px; text-align:left; border:none; border-radius:6px; font-family:Inter, Arial, sans-serif; font-size:16px; font-weight:bold; cursor:pointer; background-color:transparent; color:#284D36;">About the Author</button>
+
+  <p id="current-role" style="margin:auto 0 10px 24px; font-size:14px; line-height:18px; font-weight:bold; color:#54645A;">Administrator</p>
+  <button id="signout" type="button" style="width:172px; margin-left:24px; height:42px; border:none; border-radius:6px; color:white; font-family:Inter, Arial, sans-serif; font-size:14px; font-weight:bold; cursor:pointer; background-color:#284D36;">Sign out</button>
+
+</aside>
+
+<section style="width:922px; margin:29px 0 29px 28px; flex-shrink:0;">
+
+  <div style="position:relative; height:114px; background-color:#E4EDDA; border-radius:16px; padding:17px 23px; box-sizing:border-box;">
+    <h1 style="margin:0; font-size:34px; line-height:44px; color:#284D36;">Statistics</h1>
+    <p style="margin:5px 0 0; font-size:15px; line-height:20px; color:#54645A;">Nursery enrolment and workspace accounts.</p>
+    <img src="Teddy.png" alt="Teddy bear" style="position:absolute; left:810px; top:19px; width:84px; height:72px;">
+  </div>
+
+  <div style="display:flex; gap:10px; margin-top:28px;">
+    <div style="width:300px; height:106px; padding:15px 18px 0; box-sizing:border-box; background-color:#FFFDF9; border-radius:12px;">
+      <p style="margin:0; font-size:15px; line-height:18px; font-weight:bold; color:#284D36;">User accounts</p>
+      <p id="count-users" style="margin:8px 0 0; font-size:33px; line-height:39px; font-weight:bold; color:#284D36;">0</p>
+    </div>
+    <div style="width:300px; height:106px; padding:15px 18px 0; box-sizing:border-box; background-color:#FFFDF9; border-radius:12px;">
+      <p style="margin:0; font-size:15px; line-height:18px; font-weight:bold; color:#284D36;">Enrolled children</p>
+      <p id="count-enrolled" style="margin:8px 0 0; font-size:33px; line-height:39px; font-weight:bold; color:#284D36;">0</p>
+    </div>
+    <div style="width:300px; height:106px; padding:15px 18px 0; box-sizing:border-box; background-color:#FFFDF9; border-radius:12px;">
+      <p style="margin:0; font-size:15px; line-height:18px; font-weight:bold; color:#284D36;">Waitlisted children</p>
+      <p id="count-waitlisted" style="margin:8px 0 0; font-size:33px; line-height:39px; font-weight:bold; color:#284D36;">0</p>
+    </div>
+  </div>
+
+  <div style="margin-top:25px; height:280px; padding:22px 24px 0; box-sizing:border-box; background-color:#FFFDF9; border-radius:12px;">
+    <h2 style="margin:0; font-size:25px; line-height:29px; color:#284D36;">Children by group</h2>
+    <div style="display:flex; align-items:center; height:30px; margin-top:33px;">
+      <p style="width:150px; margin:0; font-size:16px; color:#284D36;">Acorns</p>
+      <div id="bar-acorns" style="width:0; height:30px; background-color:#E4EDDA; border-radius:4px;"></div>
+      <p id="count-acorns" style="margin:0 0 0 13px; font-size:17px; font-weight:bold; color:#284D36;">0</p>
+    </div>
+    <div style="display:flex; align-items:center; height:30px; margin-top:28px;">
+      <p style="width:150px; margin:0; font-size:16px; color:#284D36;">Sunflowers</p>
+      <div id="bar-sunflowers" style="width:0; height:30px; background-color:#E4EDDA; border-radius:4px;"></div>
+      <p id="count-sunflowers" style="margin:0 0 0 13px; font-size:17px; font-weight:bold; color:#284D36;">0</p>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
