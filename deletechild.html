@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delete child</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="delete" data-access="admin" style="display:flex; margin:0; background-color:#F8F4EB; font-family:Inter, Arial, sans-serif;">
+<aside style="width:220px; min-height:100vh; flex-shrink:0; background-color:#E4EDDA; display:flex; flex-direction:column; box-sizing:border-box; padding-bottom:28px;">
+
+  <p style="margin:26px 0 0 24px; font-size:23px; line-height:28px; font-weight:bold; color:#284D36;">Sprout House</p>
+  <p style="margin:8px 0 36px 24px; font-size:11px; line-height:13px; font-weight:bold; color:#54645A;">NURSERY STAFF PORTAL</p>
+
+  <button type="button" onclick="location.href='Registry.html'" style="width:190px; height:42px; margin:0 0 9px 15px; padding:0 0 0 12px; text-align:left; border:none; border-radius:6px; font-family:Inter, Arial, sans-serif; font-size:16px; font-weight:bold; cursor:pointer; background-color:#284D36; color:white;">Children</button>
+
+  <button type="button" onclick="location.href='Statistics.html'" style="width:190px; height:42px; margin:0 0 9px 15px; padding:0 0 0 12px; text-align:left; border:none; border-radius:6px; font-family:Inter, Arial, sans-serif; font-size:16px; font-weight:bold; cursor:pointer; background-color:transparent; color:#284D36;">Statistics</button>
+
+  <button type="button" data-admin-only onclick="location.href='Accounts&Roles.html'" style="width:190px; height:42px; margin:0 0 9px 15px; padding:0 0 0 12px; text-align:left; border:none; border-radius:6px; font-family:Inter, Arial, sans-serif; font-size:16px; font-weight:bold; cursor:pointer; background-color:transparent; color:#284D36;">Accounts &amp; Roles</button>
+
+  <button type="button" onclick="location.href='AbouttheAuthor.html'" style="width:190px; height:42px; margin:0 0 9px 15px; padding:0 0 0 12px; text-align:left; border:none; border-radius:6px; font-family:Inter, Arial, sans-serif; font-size:16px; font-weight:bold; cursor:pointer; background-color:transparent; color:#284D36;">About the Author</button>
+
+  <p id="current-role" style="margin:auto 0 10px 24px; font-size:14px; line-height:18px; font-weight:bold; color:#54645A;">Administrator</p>
+  <button id="signout" type="button" style="width:172px; margin-left:24px; height:42px; border:none; border-radius:6px; color:white; font-family:Inter, Arial, sans-serif; font-size:14px; font-weight:bold; cursor:pointer; background-color:#284D36;">Sign out</button>
+
+</aside>
+
+<section style="width:922px; margin:29px 0 29px 28px; flex-shrink:0;">
+
+  <div style="position:relative; height:114px; background-color:#E4EDDA; border-radius:16px; padding:17px 23px; box-sizing:border-box;">
+    <h1 style="margin:0; font-size:34px; line-height:44px; color:#284D36;">Delete child</h1>
+    <p style="margin:5px 0 0; font-size:15px; line-height:20px; color:#54645A;">Confirm removal from the registry.</p>
+    <img src="Teddy.png" alt="Teddy bear" style="position:absolute; left:810px; top:19px; width:84px; height:72px;">
+  </div>
+
+  <div id="page-message" style="display:none; margin-top:17px; padding:14px 19px; border-radius:10px; background-color:#F7E5DC; color:#54645A; font-size:16px; line-height:20px;"></div>
+
+  <div data-admin-only style="width:742px; height:258px; margin:68px 0 0 90px; padding:30px 29px 0; box-sizing:border-box; background-color:#FFFDF9; border-radius:16px;">
+
+    <h2 id="delete-heading" style="margin:0; font-size:29px; line-height:36px; color:#284D36;">Delete Amelia Green?</h2>
+    <p style="margin:19px 0 0; font-size:17px; line-height:21px; color:#54645A;">This permanently removes the child's record from the registry.</p>
+
+    <div style="display:flex; justify-content:flex-end; gap:19px; margin-top:60px;">
+      <button id="cancel-delete" type="button" style="width:125px; height:42px; border:none; border-radius:6px; color:white; font-family:Inter, Arial, sans-serif; font-size:14px; font-weight:bold; cursor:pointer; background-color:#536C54;">Cancel</button>
+      <button id="confirm-delete" type="button" style="width:162px; height:42px; border:none; border-radius:6px; color:white; font-family:Inter, Arial, sans-serif; font-size:14px; font-weight:bold; cursor:pointer; background-color:#9A3439;">Delete child</button>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>

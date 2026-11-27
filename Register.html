@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create account</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="register" style="margin:0; background-color:#F8F4EB; font-family:Inter, Arial, sans-serif;">
+
+<div style="display:flex; align-items:flex-start; width:1200px; min-height:730px;">
+
+<aside style="width:455px; height:658px; margin:36px 0 0 36px; border-radius:20px; background-color:#E4EDDA; text-align:center; flex-shrink:0;">
+  <img src="Teddy.png" alt="Teddy bear" style="width:84px; height:72px; margin-top:172px;">
+  <p style="margin:19px 16px 0 0; font-size:40px; line-height:48px; font-weight:bold; color:#284D36;">Sprout House</p>
+  <p style="margin:13px 16px 0 0; font-size:18px; line-height:22px; color:#284D36;">Nursery staff portal</p>
+</aside>
+
+<section style="width:606px; height:588px; margin:71px 0 0 50px; padding:30px 36px 0; box-sizing:border-box; background-color:#FFFDF9; border-radius:18px; flex-shrink:0;">
+  <form id="register-form" method="post">
+
+    <h1 style="margin:0; font-size:35px; line-height:44px; color:#284D36;">Create account</h1>
+    <p style="margin:6px 0 0; font-size:16px; line-height:20px; color:#54645A;">Register for nursery staff access.</p>
+
+    <label for="fullname" style="display:block; margin:0 0 5px; font-size:15px; line-height:18px; font-weight:bold; color:#284D36; margin-top:31px;">Full name</label>
+    <input id="fullname" name="fullName" type="text" required placeholder="Your name" style="width:100%; height:42px; background-color:#F8F4EB; border:none; border-radius:6px; padding:0 12px; box-sizing:border-box; font-family:Inter, Arial, sans-serif; font-size:14px; color:#54645A;">
+
+    <label for="email" style="display:block; margin:0 0 5px; font-size:15px; line-height:18px; font-weight:bold; color:#284D36; margin-top:12px;">Email</label>
+    <input id="email" name="email" type="email" required placeholder="name@example.com" style="width:100%; height:42px; background-color:#F8F4EB; border:none; border-radius:6px; padding:0 12px; box-sizing:border-box; font-family:Inter, Arial, sans-serif; font-size:14px; color:#54645A;">
+
+    <label for="pass" style="display:block; margin:0 0 5px; font-size:15px; line-height:18px; font-weight:bold; color:#284D36; margin-top:12px;">Password</label>
+    <input id="pass" name="password" type="password" required minlength="8" placeholder="Enter password" style="width:100%; height:42px; background-color:#F8F4EB; border:none; border-radius:6px; padding:0 12px; box-sizing:border-box; font-family:Inter, Arial, sans-serif; font-size:14px; color:#54645A;">
+
+    <label for="confirm-pass" style="display:block; margin:0 0 5px; font-size:15px; line-height:18px; font-weight:bold; color:#284D36; margin-top:12px;">Confirm password</label>
+    <input id="confirm-pass" name="confirmPassword" type="password" required minlength="8" placeholder="Repeat password" style="width:100%; height:42px; background-color:#F8F4EB; border:none; border-radius:6px; padding:0 12px; box-sizing:border-box; font-family:Inter, Arial, sans-serif; font-size:14px; color:#54645A;">
+
+    <div id="page-message" style="display:none; margin-top:14px; padding:10px 14px; border-radius:8px; background-color:#F7E5DC; color:#54645A; font-size:14px; line-height:18px;"></div>
+
+    <button type="submit" style="width:100%; height:42px; border:none; border-radius:6px; color:white; font-family:Inter, Arial, sans-serif; font-size:14px; font-weight:bold; cursor:pointer; margin-top:27px; background-color:#284D36;">Create account</button>
+    <button type="button" onclick="location.href='Signin.html'" style="width:100%; height:42px; border:none; border-radius:6px; color:white; font-family:Inter, Arial, sans-serif; font-size:14px; font-weight:bold; cursor:pointer; margin-top:15px; background-color:#536C54;">Already registered? Sign in</button>
+
+  </form>
+</section>
+
+</div>
+
+</body>
+</html>
