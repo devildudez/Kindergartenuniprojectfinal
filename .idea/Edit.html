@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Child</title>
+  <script src="script.js" defer>
+    console.log("Sprout House JavaScript is connected!");
+  </script>
+</head>
+<body style="display:flex; background-color:floralwhite; margin:0;">
+<aside style="width: 220px; height: 720px; background-color: #E4EDDA; margin-left: 15px; margin-top: 15px; padding: 20px; box-sizing: border-box;">
+
+  <p style="font-size: 23px; color: forestgreen; font-weight: bold; margin: 0;">Sprout House</p>
+
+  <button type="button" onclick="location.href='Registry.html'" style="background-color:transparent; margin-left:0; margin-top:36px; width:180px; height:42px; color:darkgreen; border:none; border-radius:6px;">Children</button>
+
+  <button type="button" onclick="location.href='Statistics.html'" style="background-color:darkgreen; width:180px; height:42px; color:white; border:none;">Statistics</button>
+
+  <button type="button" onclick="location.href='Accounts&Roles.html'" style="background-color:transparent; width:180px; height:42px; color:forestgreen; border:none;">Accounts&amp;Roles</button>
+
+  <button type="button" onclick="location.href='AbouttheAuthor.html'" style="background-color:transparent; width:180px; height:42px; color:forestgreen; border:none;">Author</button>
+
+  <p style="margin-top: 400px; margin-left: 24px; width: 95px; height: 17px; font-family: Inter, sans-serif; color: green; font-size: 10px">Adminstrator</p>
+
+  <button type="button" onclick="location.href='Signin.html'" style="margin-top:700px; margin-left:-200px; width:95px; height:17px; font-family:Inter,sans-serif; color:green; font-size:10px;">sign out</button>
+
+</aside>
+<section style="margin-left:-180px;">
+
+  <div style="width:972px; height:114px; margin-left:248px; background-color:#E4EDDA; border-radius:16px; padding:18px; position:relative;">
+    <h1 style="margin:0; font-size:28px; color:#28513F;">
+      Edit child
+    </h1>
+
+    <p style="color:#54645A; width:400px; height:16px; margin-top:8px; margin-left:0;">
+      Child record Enrolled
+    </p>
+    <img src="Teddy.png" alt="nopic" style="width: 84px;height: 72px; margin-left: 810px;margin-top: -59px;">
+  </div>
+
+  <form style="background-color:white; width:922px; padding:24px; border-radius:12px; box-sizing:border-box; font-family:Inter,sans-serif; margin-left:250px; margin-top: 15px">
+      <p style="color:forestgreen; font-size:24px; font-weight:bold; margin-top:0; margin-bottom:25px;">
+        Child and guardian details
+      </p>
+
+      <label for="fullname" style="display:block; color:forestgreen; font-size:14px; font-weight:bold; margin-bottom:8px;">
+        Full name
+      </label>
+      <input type="text" id="fullname" placeholder="Amelia Green" style="width:400px; height:42px; background-color:#F8F4EB; border:none; border-radius:6px; padding-left:12px; box-sizing:border-box;">
+
+      <label for="birthdate" style="display:block; color:forestgreen; font-size:14px; font-weight:bold; margin-top:20px; margin-bottom:8px;">
+        Birth date
+      </label>
+      <input type="date" id="birthdate" style="width:400px; height:42px; background-color:#F8F4EB; border:none; border-radius:6px; padding:10px; box-sizing:border-box;">
+
+      <label for="group" style="display:block; color:forestgreen; font-size:14px; font-weight:bold; margin-top:20px; margin-bottom:8px;">
+        Group
+      </label>
+      <select id="group" style="width:400px; height:42px; background-color:#F8F4EB; border:none; border-radius:6px; padding-left:12px;">
+        <option>Acorns</option>
+        <option>Sunflowers</option>
+      </select>
+
+      <label for="status" style="display:block; color:forestgreen; font-size:14px; font-weight:bold; margin-top:20px; margin-bottom:8px;">
+        Enrolment status
+      </label>
+      <select id="status" style="width:400px; height:42px; background-color:#F8F4EB; border:none; border-radius:6px; padding-left:12px;">
+        <option>Enrolled</option>
+        <option>Waitlisted</option>
+      </select>
+
+      <label for="guardian" style="display:block; color:forestgreen; font-size:14px; font-weight:bold; margin-top:20px; margin-bottom:8px;">
+        Guardian name
+      </label>
+      <input type="text" id="guardian" placeholder="Laura Green" style="width:400px; height:42px; background-color:#F8F4EB; border:none; border-radius:6px; padding-left:12px; box-sizing:border-box;">
+
+      <label for="guardian-email" style="display:block; color:forestgreen; font-size:14px; font-weight:bold; margin-top:20px; margin-bottom:8px;">
+        Guardian email
+      </label>
+      <input type="email" id="guardian-email" placeholder="laura.green@example.com" style="width:400px; height:42px; background-color:#F8F4EB; border:none; border-radius:6px; padding-left:12px; box-sizing:border-box;">
+
+      <div style="margin-top:30px;">
+        <button onclick="location.href='Childdetail.com.html'"type="submit" style="width:140px; height:42px; background-color:darkgreen; color:white; border:none; border-radius:6px; margin-left:12px;">
+         Cancel
+        </button>
+
+
+        <button type="button" onclick="location.href='Childdetail.com.html'">
+          Save changes
+        </button>
+      </div>
+
+    </form>
+
+</section>
+
+</body>
+</html>
